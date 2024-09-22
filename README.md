@@ -9,3 +9,8 @@ Use ```git clone https://github.com/tesscln/astrological-sign-app.git ```
 Then, go to the directory astrological-sign-app.
 
 2. Run the app.py file.
+
+```streamlit run app.py```
+
+This will open your default browser with a webpage, asking you for your name and birthday. 
+Then, by clicking on 'Calculate my sign', you will get information about your astrological sign and its signification.
