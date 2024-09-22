@@ -53,10 +53,10 @@ If it is not installed, you can install it on your desktop [here](https://www.do
 
 ### 3. Build the Docker image
 
-```docker build -t house-price-app .```
+```docker build -t astrological-sign-app .```
 
 ### 4. Run the Docker container
 
-```docker run -p 8501:8501 house-price-app```
+```docker run -p 8501:8501 astrological-sign-app```
 
 Open your browser and go to **http://localhost:8501**.
