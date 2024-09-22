@@ -4,6 +4,8 @@
 ## 1. Set-up
 
 1. Clone the repo to your machine. 
-Use ```git clone https://github.com/tesscln/astrological-sign-app.git````
+Use ```git clone https://github.com/tesscln/astrological-sign-app.git ```
 
-2. 
+Then, go to the directory astrological-sign-app.
+
+2. Run the app.py file.
