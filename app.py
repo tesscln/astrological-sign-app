@@ -1,3 +1,4 @@
+import streamlit as st
 from datetime import datetime
 
 # Function to determine astrological sign based on date of birth
@@ -29,20 +30,17 @@ def get_astrological_sign(month, day):
     else:
         return "Unknown"
 
-# Main program
+# Streamlit app structure
 def main():
-    name = input("What's your name? ")
-    birth_date = input("Enter your birth date (YYYY-MM-DD): ")
+    st.title("Astrological Sign Calculator")
+    
+    name = st.text_input("What's your name?")
+    birth_date = st.date_input("Enter your birth date")
 
-    # Parse date and hour
-    try:
-        date_obj = datetime.strptime(birth_date, "%Y-%m-%d")
-        sign = get_astrological_sign(date_obj.month, date_obj.day)
-
-        print(f"\nHello, {name}! You were born on {date_obj.strftime('%B %d, %Y')}")
-        print(f"Your astrological sign is {sign}.")
-    except ValueError:
-        print("Invalid date or time format. Please try again.")
+    if st.button("Calculate My Sign"):
+        sign = get_astrological_sign(birth_date.month, birth_date.day)
+        st.write(f"Hello, {name}! You were born on {birth_date}.")
+        st.write(f"Your astrological sign is {sign}.")
 
 if __name__ == "__main__":
     main()
