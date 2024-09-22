@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies
-RUN pip install --no-cache-dir streamlit
+RUN pip install -r requirements.txt
 
 # Expose the Streamlit port
 EXPOSE 8501
